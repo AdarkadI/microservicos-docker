@@ -5,11 +5,10 @@ import lombok.Data;
 import lombok.Getter;
 
 @Entity
-@Table(name = "produtos")
+@Table(name = "produto")
 @Data
 public class Produto {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
     private String tipo;

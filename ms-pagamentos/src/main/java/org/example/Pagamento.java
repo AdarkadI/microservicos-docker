@@ -8,7 +8,6 @@ import lombok.Data;
 @Data
 public class Pagamento {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Long idPedido;
     private Double valor;
