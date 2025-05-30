@@ -12,6 +12,6 @@ public class Pedido {
     private Long id;
     private Long idUsuario;
     private Long idProduto;
-    private Integer quantidade;
+    private double valor;
     private String status;
 }
