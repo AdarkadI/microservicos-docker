@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Random;
 
-@CrossOrigin(origins = "http://localhost:8880")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/pagamentos")
 public class PagamentoController {

@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:8880")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/pedidos")
 public class PedidoController {
