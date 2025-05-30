@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  api-pagamentos:
+    build:
+      context: ./ms-pagamentos
+    container_name: api-pagamentos
+    ports:
+      - "8884:8884"  # supondo server.port=8884 no application.properties
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://192.168.1.100:3307/petshop
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      SERVER_PORT: 8884

@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  api-usuario:
+    build:
+      context: ./ms-usuario
+    container_name: api-usuario
+    ports:
+      - "8882:8882"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://192.168.1.100:3307/petshop   # IP do computador 0
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      SERVER_PORT: 8882

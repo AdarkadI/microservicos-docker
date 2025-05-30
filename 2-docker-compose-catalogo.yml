@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  api-catalogo:
+    build:
+      context: ./ms-catalogo-produtos
+    container_name: api-catalogo
+    ports:
+      - "8881:8881"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://192.168.1.100:3307/petshop   # IP do computador 0
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      SERVER_PORT: 8881
