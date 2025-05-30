@@ -32,6 +32,6 @@ CREATE TABLE pedidos (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     id_usuario BIGINT,
     id_produto BIGINT,
-    quantidade INT,
+    valor DOUBLE,
     status VARCHAR(50)
 );
